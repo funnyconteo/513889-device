@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Андрей Рябиков](https://up.htmlacademy.ru/htmlcss/20/user/513889).
-* Наставник: `Дмитрий Селиванов`.
+* Наставник: [Дмитрий Селиванов](https://htmlacademy.ru/profile/dmitrii_selivanov).
 
 ---
 
