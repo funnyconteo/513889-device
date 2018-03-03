@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Девайс</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="index.html"><img src="img/logo.png" alt="logo" width="164" height="36"></a>
+        <input class="search-input" type="search">
+        <ul class="user-menu">
+          <li><a href="#">Валентин Петухов</a></li>
+          <li><a href="#">Выйти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+        <ul class="site-navigation">
+          <li><a href="#">Каталог товаров</a>
+            <ul>
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="page-title">Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li class="breadcrumbs-current">Моноподы для селфи</li>
+      </ul>
+    <section class="catalog-header">
+      <h2>Фильтр:</h2>
+      <h2>Сортировка:</h2>
+      <ul>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По популярности</a></li>
+      </ul>
+      <div>
+        <a href="#"><i class="fas fa-caret-up"></i></a>
+        <a href="#"><i class="fas fa-caret-down"></i></a>
+      </div>
+    </section>
+    <section>
+      <form action="/echo" method="post">
+        <fieldset>
+          <legend>Стоимость</legend>
+          0<input type="range" id="cost" min="0" max="5000" step="1">5000
+        </fieldset> 
+        <fieldset>
+          <legend>Цвет</legend>
+          <input type="checkbox" name="black" id="black" checked>
+          <label for="black">Черный</label>
+          <input type="checkbox" name="white" id="white">
+          <label for="black">Белый</label>
+          <input type="checkbox" name="blue" id="blue" checked>
+          <label for="black">Синий</label>
+          <input type="checkbox" name="red" id="red" checked>
+          <label for="black">Красный</label>
+          <input type="checkbox" name="pink" id="pink">
+          <label for="black">Розовый</label>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>        
+          <label>
+            <input type="radio" name="availability" value="yes" checked>
+            Есть
+          </label>
+          <label>
+            <input type="radio" name="availability" value="no">
+            Нет
+          </label>
+        </fieldset>
+        <div class="btn">
+          <input type="submit" value="Показать">
+        </div>  
+      </form>
+    </section>
+    <section>
+      <div class="junior-stick">
+        <img src="img/item-1.jpg" alt="junior stick" width="360" height="380">
+        <a href="#"><h2>Любительская селфи-палка</h2></a>
+        <a href="#"><p>500 руб.</p></a>
+        <button type="submit">В корзину</button>
+        <button type="submit">Добавить к сравнению</button>
+      </div>
+      <div class="senior-stick">
+        <img src="img/item-2.jpg" alt="junior stick" width="360" height="380">
+        <a href="#"><h2>Профессиональная селфи-палка </h2></a>
+        <a href="#"><p>1 500 руб.</p></a>
+        <button type="submit">В корзину</button>
+        <button type="submit">Добавить к сравнению</button>
+      </div>
+      <div class="floatable-stick">
+        <img src="img/item-3.jpg" alt="junior stick" width="360" height="380">
+        <a href="#"><h2>Непотопляемая селфи-палка</h2></a>
+        <a href="#"><p>2 500 руб.</p></a>
+        <button type="submit">В корзину</button>
+        <button type="submit">Добавить к сравнению</button>
+      </div>
+      <div class="follow-stick">
+        <img src="img/item-4.jpg" alt="junior stick" width="360" height="380">
+        <a href="#"><h2>Селфи-палка «Следуй за мной»</h2></a>
+        <a href="#"><p>4 900 руб.</p></a>
+        <button type="submit">В корзину</button>
+        <button type="submit">Добавить к сравнению</button>
+      </div>
+      <div class="catalog-nav">
+        <ul>
+          <li><a href="#">Назад</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Вперед</a></li>
+        </ul>
+      </div>
+    </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__right">
+        <img src="img/logo-1.png" alt="logo">
+        <p>г. Москва, ул. Строителей, 15</p>
+      </div>
+      <div class="main-footer__center">
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="main-footer__left">
+        <ul class="user-menu">
+          <li><a href="#">Валентин Петухов</a></li>
+          <li><a href="#">Выйти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
+
+  
