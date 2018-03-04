@@ -9,7 +9,9 @@
     <header class="main-header">
       <nav class="main-navigation">
         <img src="img/logo.png" alt="logo" width="164" height="36">
-        <input class="search-input" type="search">
+        <form action="/echo" method="post">
+          <input class="search-input" type="search">
+        </form>
         <ul class="user-menu">
           <li><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
@@ -45,10 +47,10 @@
           <label for="btn-3"></label>
         </div>
         <div class="first-slider">
-          <div class="first-slider__img">
+          <div class="picture">
             <img src="img/slider-1.png" alt="selfie stick" width="384" height="486">
           </div>
-          <div class="first-slider__text">
+          <div class="description">
             <span>01</span>
             <h2>Делай селфи, как Бен Стиллер!</h2>
             <p>
@@ -67,10 +69,10 @@
           </div>
         </div>
         <div class="second-slider">
-          <div class="second-slider__img">
-            <img src="img/slider-2.png" alt="selfie stick" width="345" height="485">
+          <div class="picture">
+            <img src="img/slider-2.png" alt="smart bracelet" width="345" height="485">
           </div>
-          <div class="second-slider__text">
+          <div class="description">
             <span>02</span>
             <h2>Худеем правильно!</h2>
             <p>
@@ -85,16 +87,16 @@
           </div>
         </div>
         <div class="third-slider">
-          <div class="third-slider__img">
-            <img src="img/slider-3.png" alt="selfie stick" width="526" height="334">
+          <div class="picture">
+            <img src="img/slider-3.png" alt="laser drone" width="526" height="334">
           </div>
-          <div class="third-slider__text">
+          <div class="description">
             <span>03</span>
             <h2>Порхает как бабочка, жалит как пчела!</h2>
             <p>
               Этот обычный, на первый взгляд, квадрокоптер оснащен 
               мощным лазером, замаскированным под стандартную камеру.
-          </p>
+            </p>
             <a href="#" class="btn">Подробнее</a>
             <dl>
               <dt>800 м</dt>
@@ -108,51 +110,39 @@
       <section class="popular">
         <a href="#">
           <div>
-            <div>
-              <img src="img/popular-1.png" alt="vr" width="97" height="55">
-            </div>
-            <h3>Виртуальная реальность</h3>
+            <img src="img/popular-1.png" alt="VRglasses" width="97" height="55">
           </div>
+          <h3>Виртуальная реальность</h3>
         </a>
         <a href="#">
           <div>
-            <div>
-              <img src="img/popular-2.png" alt="vr" width="86" height="117">
-            </div>
-            <h3>Моноподы для селфи</h3>
+            <img src="img/popular-2.png" alt="monopod" width="86" height="117">
           </div>
+          <h3>Моноподы для селфи</h3>
         </a>
         <a href="#">
           <div>
-            <div>
-              <img src="img/popular-3.png" alt="vr" width="71" height="87">
-            </div>
-            <h3>Экшн-камеры</h3>
+            <img src="img/popular-3.png" alt="cam" width="71" height="87">
           </div>
+          <h3>Экшн-камеры</h3>
         </a>
         <a href="#">
           <div>
-            <div>
-              <img src="img/popular-4.png" alt="vr" width="107" height="65">
-            </div>
-            <h3>Фитнес-браслеты</h3>
+            <img src="img/popular-4.png" alt="bracelet" width="107" height="65">
           </div>
+          <h3>Фитнес-браслеты</h3>
         </a>
         <a href="#">
           <div>
-            <div>
-              <img src="img/popular-5.png" alt="vr" width="56" height="98">
-            </div>
-            <h3>Умные часы</h3>
+            <img src="img/popular-5.png" alt="watch" width="56" height="98">
           </div>
+          <h3>Умные часы</h3>
         </a>
         <a href="#">
           <div>
-            <div>
-              <img src="img/popular-6.png" alt="vr" width="132" height="69">
-            </div>
-            <h3>Квадрокоптеры</h3>
+            <img src="img/popular-6.png" alt="drone" width="132" height="69">
           </div>
+          <h3>Квадрокоптеры</h3>
         </a> 
       </section>
       <section class="services">
@@ -222,11 +212,11 @@
     </section>    
     </main>
     <footer class="main-footer">
-      <div class="main-footer__right">
+      <div class="right">
         <img src="img/logo-1.png" alt="logo">
         <p>г. Москва, ул. Строителей, 15</p>
       </div>
-      <div class="main-footer__center">
+      <div class="center">
         <ul>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
@@ -238,7 +228,7 @@
           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
         </ul>
       </div>
-      <div class="main-footer__left">
+      <div class="left">
         <ul class="user-menu">
           <li><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
@@ -249,7 +239,7 @@
       </div>
     </footer>
 
-    <section class="modal wright-us">
+    <section class="modal write-us">
       <p>Ваше имя:</p>
       <p>Ваш e-mail:</p>
       <p>Текст письма:</p>
