@@ -5,8 +5,10 @@
     <title>Девайс</title>
   </head>
   <body>
+    <h1 class="visually-hidden">Каталог моноподов</h1>
     <header class="main-header">
       <nav class="main-navigation">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
         <a href="index.html"><img src="img/logo.png" alt="logo «DEVICE»" width="164" height="36"></a>
         <form action="https://echo.htmlacademy.ru" method="get">
           <input class="search-input" type="search" aria-label="search" placeholder="Поиск по сайту">
@@ -35,117 +37,118 @@
       </nav>
     </header>
     <main class="container">
-      <h1 class="page-title">Моноподы для селфи</h1>
+      <h2 class="visually-hidden">Навигация по страницам</h2>
+      <p>Моноподы для селфи</p>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
-    <section class="catalog-header">
-      <h2>Фильтр:</h2>
-      <h2>Сортировка:</h2>
-      <ul>
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По популярности</a></li>
-      </ul>
-      <div>
-        <a href="#"><img src="img/icon-up-dir.svg" alt="caret up"></a>
-        <a href="#"><img src="img/icon-down-dir.svg" alt="caret down"></a>      
-      </div>
-    </section>
-    <section>
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend>Стоимость</legend>
-          0<input type="range" id="cost" min="0" max="5000" step="1">5000
-        </fieldset> 
-        <fieldset>
-          <legend>Цвет</legend>
-          <ul>
-            <li>
-              <input class="visually-hidden" type="checkbox" name="black" id="black" checked>
-              <label for="black">Черный</label>
-            </li>
-            <li>
-              <input class="visually-hidden" type="checkbox" name="white" id="white">
-              <label for="white">Белый</label>
-            </li>
-            <li>
-              <input class="visually-hidden" type="checkbox" name="blue" id="blue" checked>
-              <label for="blue">Синий</label>
-            </li>
-            <li>
-              <input class="visually-hidden" type="checkbox" name="red" id="red" checked>
-              <label for="red">Красный</label>
-            </li>
-            <li>
-              <input class="visually-hidden" type="checkbox" name="pink" id="pink">
-              <label for="pink">Розовый</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Bluetooth</legend>    
-          <ul>
-            <li>
-              <label>
-                <input class="visually-hidden" type="radio" name="availability" value="yes" checked>
-                Есть
-              </label>
-            </li>
-            <li>
-              <label>
-                <input class="visually-hidden" type="radio" name="availability" value="no">
-                Нет
-              </label>
-            </li>
-          </ul>    
-        </fieldset>
-        <button class="btn" type="submit">Показать</button> 
-      </form>
-    </section>
-    <section>
-      <div class="junior-stick">
-        <h2 class="visually-hidden">Список товаров</h2>
-        <img src="img/item-1.jpg" alt="junior selfie stick" width="360" height="380">
-        <h3><a href="#">Любительская селфи-палка</a></h3>        
-        <p>500 руб.</p>
-        <button type="submit">В корзину</button>
-        <button type="submit">Добавить к сравнению</button>
-      </div>
-      <div class="senior-stick">        
-        <img src="img/item-2.jpg" alt="professional selfie stick" width="360" height="380">
-        <h3><a href="#">Профессиональная селфи-палка</a></h3>       
-        <p>1 500 руб.</p>
-        <button type="submit">В корзину</button>
-        <button type="submit">Добавить к сравнению</button>
-      </div>
-      <div class="floatable-stick">        
-        <img src="img/item-3.jpg" alt="floatable selfie stick" width="360" height="380">
-        <h3><a href="#">Непотопляемая селфи-палка</a></h3>
-        <p>2 500 руб.</p>
-        <button type="submit">В корзину</button>
-        <button type="submit">Добавить к сравнению</button>
-      </div>
-      <div class="follow-stick">        
-        <img src="img/item-4.jpg" alt="selfie stick «FOLLOW ME»"  width="360" height="380">
-        <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>        
-        <p>4 900 руб.</p>
-        <button type="submit">В корзину</button>
-        <button type="submit">Добавить к сравнению</button>
-      </div>
-      <div class="catalog-nav">
+      <section class="catalog-header">
+        <p>Фильтр:</p>
+        <h2>Сортировка:</h2>
         <ul>
-          <li><a href="#">Назад</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Вперед</a></li>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
         </ul>
-      </div>
-    </section>
+        <div>
+          <a href="#"><img src="img/icon-up-dir.svg" alt="caret up"></a>
+          <a href="#"><img src="img/icon-down-dir.svg" alt="caret down"></a>      
+        </div>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Стоимость</legend>
+            0<input type="range" id="cost" min="0" max="5000" step="1">5000
+          </fieldset> 
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <input class="visually-hidden" type="checkbox" name="black" id="black" checked>
+                <label for="black">Черный</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" name="white" id="white">
+                <label for="white">Белый</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" name="blue" id="blue" checked>
+                <label for="blue">Синий</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" name="red" id="red" checked>
+                <label for="red">Красный</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" name="pink" id="pink">
+                <label for="pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>    
+            <ul>
+              <li>
+                <label>
+                  <input class="visually-hidden" type="radio" name="availability" value="yes" checked>
+                  Есть
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="visually-hidden" type="radio" name="availability" value="no">
+                  Нет
+                </label>
+              </li>
+            </ul>    
+          </fieldset>
+          <button class="btn" type="submit">Показать</button> 
+        </form>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Список товаров</h2>
+        <div class="junior-stick">
+          <img src="img/item-1.jpg" alt="junior selfie stick" width="360" height="380">
+          <h3><a href="#">Любительская селфи-палка</a></h3>        
+          <p>500 руб.</p>
+          <button type="submit">В корзину</button>
+          <button type="submit">Добавить к сравнению</button>
+        </div>
+        <div class="senior-stick">        
+          <img src="img/item-2.jpg" alt="professional selfie stick" width="360" height="380">
+          <h3><a href="#">Профессиональная селфи-палка</a></h3>       
+          <p>1 500 руб.</p>
+          <button type="submit">В корзину</button>
+          <button type="submit">Добавить к сравнению</button>
+        </div>
+        <div class="floatable-stick">        
+          <img src="img/item-3.jpg" alt="floatable selfie stick" width="360" height="380">
+          <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+          <p>2 500 руб.</p>
+          <button type="submit">В корзину</button>
+          <button type="submit">Добавить к сравнению</button>
+        </div>
+        <div class="follow-stick">        
+          <img src="img/item-4.jpg" alt="selfie stick «FOLLOW ME»"  width="360" height="380">
+          <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>        
+          <p>4 900 руб.</p>
+          <button type="submit">В корзину</button>
+          <button type="submit">Добавить к сравнению</button>
+        </div>
+        <div class="catalog-nav">
+          <ul>
+            <li><a href="#">Назад</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">Вперед</a></li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="right">
