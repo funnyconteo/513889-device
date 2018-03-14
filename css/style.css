@@ -1,13 +1,31 @@
 @font-face {
     font-family: 'Gilroy ExtraBold';
-    src: url('../fonts/gilroyextrabold.woff2') format('woff2');
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy light';
-    src: url('../fonts/gilroylight.woff2') format('woff2');
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +33,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Open Sans Light', Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     color: #000000;
@@ -36,7 +54,7 @@ body {
 
     h1, h2, h3, a, button {
         font-family: 'Gilroy ExtraBold', Arial, sans-serif;
-        font-size: 800;
+        font-weight: 800;
         color: #000000;
     }
 
@@ -53,7 +71,6 @@ body {
         display: block;
         padding-top: 8px;
         padding-bottom: 8px;
-        vertical-align: middle;
         position: relative;
         width: 220px;
         border: none;
@@ -104,7 +121,7 @@ body {
     }
 
     .user-menu a {
-        font-family: 'Open Sans', Arial, sans-serif;
+        font-family: 'Open Sans Light', Arial, sans-serif;
         font-weight: 300;
         line-height: 30px;
     }
@@ -118,7 +135,7 @@ body {
     }
 
     .sub-categories a {
-        font-family: 'Open Sans', Arial, sans-serif;
+        font-family: 'Open Sans Light', Arial, sans-serif;
         font-weight: 300;
         font-size: 15px;
         line-height: 36px;
@@ -184,7 +201,7 @@ body {
     }
 
     .breadcrumbs a, .breadcrumbs-current {
-        font-family: 'Open Sans', Arial, sans-serif;
+        font-family: 'Open Sans Light', Arial, sans-serif;
         font-weight: 300;
         font-size: 15px;
         line-height: 36px;
@@ -242,7 +259,7 @@ body {
     }
 
     .filter-form label {
-        font-family: 'Open Sans', Arial, sans-serif;
+        font-family: 'Open Sans Light', Arial, sans-serif;
         font-weight: 300;
         font-size: 14px;
         line-height: 40px;
@@ -251,6 +268,7 @@ body {
     .compare {
         font-family: 'Open Sans', Arial, sans-serif;
         font-size: 13px;
+        font-weight: 400;
         line-height: 20px;
         background-color: transparent;
         border: none;
