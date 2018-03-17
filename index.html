@@ -40,7 +40,7 @@
     <main>
       <section class="slider-content container">
         <h2 class="visually-hidden">Лучшие товары</h2>
-        <div class="slider">
+        <div class="slider visually-hidden">
           <input type="radio" id="btn-1" name="toggle">
           <input type="radio" id="btn-2" name="toggle">
           <input type="radio" id="btn-3" name="toggle">
@@ -50,7 +50,7 @@
           <label for="btn-2"></label>
           <label for="btn-3"></label>
         </div>
-        <div class="first-slider">
+        <div class="first-slider sliders">
           <div class="picture">
             <img src="img/slider-1.png" alt="selfie stick" width="384" height="486">
           </div>
@@ -62,17 +62,21 @@
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
             <a href="#" class="btn">Подробнее</a>
-            <dl>
-              <dt>8,5 м</dt>
-              <dd>Длина палки</dd>
-              <dt>5 кг</dt>
-              <dd>Вес палки</dd>
-              <dt>Карбон</dt>
-              <dd>Материал</dd>
-            </dl>
+            <table>
+              <tr>
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr>
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
+              </tr>
+            </table>
           </div>
         </div>
-        <div class="second-slider">
+        <div class="second-slider sliders">
           <div class="picture">
             <img src="img/slider-2.png" alt="smart bracelet" width="345" height="485">
           </div>
@@ -84,13 +88,19 @@
               не пропускать занятия и соблюдать диету.
             </p>
             <a href="#" class="btn">Подробнее</a>
-            <dl>
-              <dt>48 часов</dt>
-              <dd>Без подзарядки</dd>
-            </dl>
+            <table>
+              <tr>
+                <td>48 часов</td>
+              </tr>
+              <tr>
+                <th>
+                  Без подзарядки
+                </th>
+              </tr>
+            </table>
           </div>
         </div>
-        <div class="third-slider">
+        <div class="third-slider sliders">
           <div class="picture">
             <img src="img/slider-3.png" alt="laser drone" width="526" height="334">
           </div>
@@ -102,12 +112,16 @@
               мощным лазером, замаскированным под стандартную камеру.
             </p>
             <a href="#" class="btn">Подробнее</a>
-            <dl>
-              <dt>800 м</dt>
-              <dd>Дальность полета</dd>
-              <dt>50 м</dt>
-              <dd>Радиус поражения</dd>
-            </dl>
+            <table>
+              <tr>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr>
+                <th>Дальность полета</th>
+                <th>Радиус поражения</th>
+              </tr>
+            </table>
           </div>
         </div>
       </section>
@@ -124,7 +138,7 @@
           </li>
           <li>
             <a class="popular-item" href="catalog.html">
-              <div class="img-container">
+              <div class="img-container monopod-align">
                 <img src="img/popular-2.svg" alt="monopod" width="86" height="117">
               </div>
               <h3>Моноподы для селфи</h3>
@@ -166,74 +180,82 @@
       </section>
       <section class="services">
         <div class="container">
-          <ul>
-            <li><a href="#" class="btn">Доставка</a></li>
-            <li><a href="#" class="btn">Гарантия</a></li>
-            <li><a href="#" class="btn">Кредит</a></li>
-          </ul>
-          <div class="delivery">
-            <h2>Доставка</h2>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо 
-              к вашему подъезду совершенно бесплатно! Ведь 
-              мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
+          <div>
+            <ul class="services-btn">
+              <li><a href="#" class="btn">Доставка</a></li>
+              <li><a href="#" class="btn">Гарантия</a></li>
+              <li><a href="#" class="btn">Кредит</a></li>
+            </ul>
           </div>
-          <div class="warranty">
-            <h2>Гарантия</h2>
-            <p>
-              Если из-за возгорания купленного у нас товара 
-              у вас сгорит дом — не переживайте, мы выдадим 
-              вам новый. Товар, не дом, конечно же.
-            </p>
-          </div>
-          <div class="credit">
-            <h2>Кредит</h2>
-            <p>
-              Залезть в долговую яму стало проще! Кредитные 
-              консультанты подберут для вас наиболее выгодные 
-              условия кредита. Выгодные для нашего банка, разумеется.
-            </p>
-          </div>
+          <div class="services-wrapper"> 
+            <div class="services-content delivery">
+              <div class="services-text">
+                <h2>Доставка</h2>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо 
+                  к вашему подъезду совершенно бесплатно! Ведь 
+                  мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
+              </div>
+            </div>
+            <div class="services-content warranty">
+              <div class="services-text">
+                <h2>Гарантия</h2>
+                <p>
+                  Если из-за возгорания купленного у нас товара 
+                  у вас сгорит дом — не переживайте, мы выдадим 
+                  вам новый. Товар, не дом, конечно же.
+                </p>
+              </div>
+            </div>
+            <div class="services-content credit">
+              <div class="services-text">
+                <h2>Кредит</h2>
+                <p>
+                  Залезть в долговую яму стало проще! Кредитные 
+                  консультанты подберут для вас наиболее выгодные 
+                  условия кредита. Выгодные для нашего банка, разумеется.
+                </p>
+              </div>
+            </div>
+          </div>   
         </div>
       </section>
-      <section class="logo container">
+      <section class="logotypes container">
         <h2 class="visually-hidden">Наши партнеры</h2>
-        <a href="#"><img src="img/logo-1-gray.jpg" alt="logo «DJI»"></a>
-        <a href="#"><img src="img/logo-1.jpg" alt="logo «DJI»"></a>
-        <a href="#"><img src="img/logo-2-gray.jpg" alt="logo «SP GADGETS»"></a>
-        <a href="#"><img src="img/logo-2.jpg" alt="logo «SP GADGETS»"></a>
-        <a href="#"><img src="img/logo-3-gray.jpg" alt="logo «GO PRO»"></a>
-        <a href="#"><img src="img/logo-3.jpg" alt="logo «GO PRO»"></a>
-        <a href="#"><img src="img/logo-4-gray.jpg" alt="logo «VIVE»"></a>
-        <a href="#"><img src="img/logo-4.jpg" alt="logo «VIVE»"></a>        
+        <a class="first-logo logo" href="#"><img src="img/logo-1-gray.jpg" alt="logo «DJI»"></a>
+        <a class="second-logo logo" href="#"><img src="img/logo-2-gray.jpg" alt="logo «SP GADGETS»"></a>
+        <a class="third-logo logo" href="#"><img src="img/logo-3-gray.jpg" alt="logo «GO PRO»"></a>
+        <a class="fourth-logo logo" href="#"><img src="img/logo-4-gray.jpg" alt="logo «VIVE»"></a>      
       </section>
-      <section class="about container">
-        <h2>О нас</h2>
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика, 
-          который есть в каждом из нас.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки 
-          России! DEVICE работает со многими транспортными компаниями:
-        </p>
-        <ul>
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#" class="btn">Подробнее о нас</a>
-      </section>
-      <section class="contact container">
-        <h2>Контакты</h2>
-        <p>
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы 
-          сможете проверить работоспособность покупки. Всякое бывает.
-        </p>
-        <img src="img/map.jpg" alt="map" width="560" height="222" longdesc="#map-longdesc">
-        <a href="#" class="btn">Напишите нам</a>
-      </section>   
+      <div class="container info-wrapper">
+        <section class="about">
+          <h2>О нас</h2>
+          <p>
+            Огромный выбор гаджетов не оставит равнодушным гика, 
+            который есть в каждом из нас.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки 
+            России! DEVICE работает со многими транспортными компаниями:
+          </p>
+          <ul>
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#" class="btn">Подробнее о нас</a>
+        </section>
+        <section class="contact">
+          <h2>Контакты</h2>
+          <p>
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы 
+            сможете проверить работоспособность покупки. Всякое бывает.
+          </p>
+          <img src="img/map.jpg" alt="map" width="560" height="222" longdesc="#map-longdesc">
+          <a href="#" class="btn">Напишите нам</a>
+        </section> 
+      </div>
     </main>
     <footer class="main-footer">
       <div class="container">
