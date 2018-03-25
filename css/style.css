@@ -727,6 +727,7 @@ body {
     .contact img {
         margin-top: 9px;
         margin-bottom: 59px;
+        cursor: pointer;
     }
 
     /* catalog */
@@ -877,20 +878,16 @@ body {
         opacity: 1;
     }
 
+    .catalog-background {
+        background: 
+            linear-gradient(to right, #ebebeb  36.8%, #fff 36.8%, #fff);
+        width: 100%;
+        z-index: -1;
+    }
+
     .catalog-wrapper {
         display: flex;
         justify-content: space-between;
-    }
-
-    .catalog-wrapper:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        background: 
-            linear-gradient(to right, #ebebeb  36.8%, #fff 36.8%, #fff);
-        height: 188.8%;
-        width: 100%;
-        z-index: -1;
     }
 
     .filter-form {
