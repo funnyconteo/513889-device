@@ -1283,7 +1283,6 @@ body {
     .left {
         position: relative;
         display: flex;
-        justify-content: right;
         flex-wrap: wrap;
         width: 318px;
         flex-direction: column;
