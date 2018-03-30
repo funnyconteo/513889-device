@@ -1197,7 +1197,7 @@ body {
     .item-wrapper {
         position: relative;
         width: -webkit-calc((100vw - (330px + 830px) /2 ) + 830px);
-        width: calc((100vw - (330px + 830px) /2 ) + 830px);
+        width: calc(((100% - 1160px) /2 ) + 830px);
         border-top: 70px solid #ebebeb;
     }
 
@@ -1603,7 +1603,7 @@ body {
     }
 
     .write-us {
-        padding: 94px 100px 77px 100px;
+        padding: 94px 99px 77px 99px;
         margin-left: -480px;
         margin-top: -275px;
         -webkit-box-sizing: border-box;
