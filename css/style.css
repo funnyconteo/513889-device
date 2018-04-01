@@ -451,20 +451,20 @@ a, button {
 table {
     margin-top: 48px;
 }
-td {
+.description td {
     font-family: 'Gilroy light', Arial, sans-serif;
     font-size: 36px;
     line-height: 48px;
     text-align: left;
     width: 160px;
 }
-td:nth-of-type(1) {
+.description td:nth-of-type(1) {
     width: 154px;
 }
-td:nth-of-type(2) {
+.description td:nth-of-type(2) {
     width: 135px;
 }
-th {
+.description th {
     font-size: 13px;
     line-height: 20px;
     text-align: left;
