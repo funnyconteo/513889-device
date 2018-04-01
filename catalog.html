@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <h1 class="visually-hidden">Каталог моноподов</h1>
@@ -140,7 +140,7 @@
                 <li><a href="#">По популярности</a></li>
               </ul>
               <ul class="sort-carets">
-                <li><a href="#"><img src="img/icon-up-dir.svg" alt="caret up"></a></li>
+                <li><a href="#" aria-label="сортировать по убыванию"><img src="img/icon-up-dir.svg" alt="caret up"></a></li>
                 <li class="current-sort"><img src="img/icon-down-dir.svg" alt="caret down"></li>
               </ul>
             </div>
@@ -211,15 +211,15 @@
               </div>
             </div>
             <ul class="catalog-nav">
-              <li class="arrow-toggle"><a href="#">Назад</a></li>
+              <li class="arrow-toggle"><a aria-label="предыдущая страница" href="#">Назад</a></li>
               <li>
                 <ul class="toggle-numbers">
-                  <li class="current-toggle"><a>1</a></li>
-                  <li class="number-toggle"><a href="#">2</a></li>
-                  <li class="number-toggle"><a href="#">3</a></li>
+                  <li class="current-toggle"><a aria-label="первая страница">1</a></li>
+                  <li class="number-toggle"><a aria-label="вторая страница" href="#">2</a></li>
+                  <li class="number-toggle"><a aria-label="третья страница" href="#">3</a></li>
                 </ul>
               </li>
-              <li class="arrow-toggle"><a href="#">Вперед</a></li>
+              <li class="arrow-toggle"><a aria-label="следующая страница" href="#">Вперед</a></li>
             </ul>
           </section>
         </div>
@@ -240,9 +240,9 @@
             <li><a href="#">Контакты</a></li>
           </ul>
           <ul class="social">
-            <li><a class="social-button" href="#"><img src="img/fb.svg" alt="facebook"></a></li>
-            <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="instagram"></a></li>
-            <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
+            <li><a class="social-button" href="#" aria-label="Перейти на сайт в Фэйсбук"><img src="img/fb.svg" alt="facebook"></a></li>
+            <li><a class="social-button" href="#" aria-label="Перейти на сайт в Инстаграм"><img src="img/instagram.svg" alt="instagram"></a></li>
+            <li><a class="social-button" href="#" aria-label="Перейти на сайт в Твиттер"><img src="img/twitter.svg" alt="twitter"></a></li>
           </ul>
         </div>
         <div class="left">
@@ -253,7 +253,7 @@
             <li><a class="third-link" href="#">Корзина</a></li>
           </ul>
           <p>Тел.: +7 (495) 495-95-95</p>
-          <a class="academy" rel="noopener" href="https://htmlacademy.ru/intensive/htmlcss"  target="_blank">
+          <a class="academy" rel="noopener" href="https://htmlacademy.ru/intensive/htmlcss"  target="_blank" aria-label="Перейти на сайт HTML Academy">
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>

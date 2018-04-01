@@ -1,5 +1,3 @@
-
-
 var link = document.querySelector(".modal-btn");
 
 var popup = document.querySelector(".write-us");
