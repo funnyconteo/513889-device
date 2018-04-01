@@ -44,15 +44,13 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-h1, h2, h3, a, button {
-    font-family: 'Gilroy ExtraBold', Arial, sans-serif;
-    color: #000000;
-}
 a, button {
     text-decoration: none;
     cursor: pointer;
 }
 .btn {
+    font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+    color: #000000;
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
@@ -107,6 +105,9 @@ a, button {
     margin: 0 auto;
     padding-top: 18px;
     padding-bottom: 145px;
+}
+.main-navigation a {
+    color: #000
 }
 .main-navigation img {
     position: absolute;
@@ -203,6 +204,7 @@ a, button {
     font-family: 'Open Sans Light', Arial, sans-serif;
     font-weight: 300;
     line-height: 30px;
+    color: #000;
     position: relative;
     padding-left: 25px;
 }
@@ -342,6 +344,10 @@ a, button {
     position: relative;
     margin-top: -110px;
 }
+.slider h3 {
+    font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+    color: #000000;
+}
 .sliders {
     display: -ms-flexbox;
     display: -webkit-box;
@@ -365,12 +371,13 @@ a, button {
     position: absolute;
     width: 95px;
     height: 12px;
-    bottom: 247px;
+    bottom: 238px;
     right: 65px;
     z-index: 1;
 }
 .slider-controls label {
     display: inline-block;
+    vertical-align: top;
     width: 12px;
     height: 12px;
     margin-right: 17px;
@@ -478,6 +485,7 @@ a, button {
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 163px;
     list-style: none;
     padding: 0;
@@ -511,6 +519,8 @@ a, button {
     align-items: flex-end;
 }
 .popular-item h3 {
+    font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+    color: #000000;
     letter-spacing: 0.2px;
     font-size: 18px;
     line-height: 24px;
@@ -557,6 +567,7 @@ a, button {
     background-color: #000;
 }
 .btn-acive {
+    font-family: 'Gilroy ExtraBold', Arial, sans-serif;
     width: 278px;
     color: #f7e184;
     text-align: left;
@@ -598,6 +609,8 @@ a, button {
     padding-top: 12px;
 }
 .services-content h2 {
+    font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+    color: #000000;
     font-size: 47px;
     line-height: 48px;
     margin-top: 0;
@@ -657,6 +670,8 @@ a, button {
     background-image: url('../img/logo-4.jpg');
 }
 .about h2, .contact h2 {
+    font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+    color: #000000;
     font-size: 47px;
     line-height: 48px;
     margin-bottom: 43px;
@@ -727,7 +742,12 @@ a, button {
 }
 .main-subtitle {
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+    line-height: 48px;
     font-size: 47px;
+    margin-left: 59px;
+    margin-top: 37px;
+    margin-bottom: 17px;
+    letter-spacing: 0.7px;
 }
 .header-subtitle {
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
@@ -737,12 +757,6 @@ a, button {
 }
 .breadcrumbs-section {
     margin-bottom: 41px;
-}
-.breadcrumbs-section p {
-    margin-left: 59px;
-    margin-top: 45px;
-    margin-bottom: 27px;
-    letter-spacing: 0.7px;
 }
 .breadcrumbs {
     display: -webkit-box;
@@ -761,6 +775,7 @@ a, button {
     font-family: 'Open Sans Light', Arial, sans-serif;
     font-size: 14px;
     line-height: 36px;
+    color: #000;
     opacity: .3;
 }
 .breadcrumbs li:not(:nth-of-type(3)) {
@@ -811,6 +826,7 @@ a, button {
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 782px;
     top: -75px;
     left: 50px;
@@ -839,6 +855,7 @@ a, button {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 490px;
     margin-left: 22px;
     list-style: none;
@@ -854,6 +871,7 @@ a, button {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
+    color: #000;
     opacity: .3;
 }
 .sort a:hover {
@@ -907,8 +925,8 @@ a, button {
     width: -webkit-calc(100vw - ((100vw - 1160px) / 2));
     width: calc(100vw - ((100vw - 1160px) / 2));
     padding-right: 70px;
-    padding-left: -webkit-calc(((100vw - 1160px) / 2) + 60px);
-    padding-left: calc(((100vw - 1160px) / 2) + 60px);
+    padding-left: -webkit-calc(((100vw - 1160px) / 2) + 51px);
+    padding-left: calc(((100vw - 1160px) / 2) + 51px);
     background-color: #ebebeb;
     border-top: 70px solid #dcdcdc;
      width: 200px;
@@ -1055,8 +1073,8 @@ a, button {
 }
 .item-wrapper {
     position: relative;
-    width: -webkit-calc((100vw - (330px + 830px) /2 ) + 830px);
-    width: calc(((100% - 1160px) /2 ) + 830px);
+    width: -webkit-calc((100vw - (330px + 830px) /2 ) + 831px);
+    width: calc(((100% - 1160px) /2 ) + 831px);
     border-top: 70px solid #ebebeb;
 }
 .catalog-items {
@@ -1082,19 +1100,7 @@ a, button {
     background-repeat: no-repeat;
     background-position: center;
 }
-.item-1 {
-    background-image: url('../img/item-1.jpg');
-}
-.item-2 {
-    background-image: url('../img/item-2.jpg');
-}
-.item-3 {
-    background-image: url('../img/item-3.jpg');
-}
-.item-4 {
-    background-image: url('../img/item-4.jpg');
-}
-.item-4:after {
+.new-label::after {
     content: 'NEW';
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
     font-size: 14px;
@@ -1132,6 +1138,9 @@ a, button {
     margin-top: 17px;
     letter-spacing: 0.2px;
 }
+.item-description a {
+    color: #000000;
+}
 .item-description p {
     font-family: 'Open Sans Light', Arial, sans-serif;
     font-size: 16px;
@@ -1140,6 +1149,9 @@ a, button {
     margin-bottom: 55px;
 }
 .button-wrapper {
+    position: absolute;
+    top: 0;
+    left: 80px;
     display: none;
     width: 200px;
     margin: 0 auto;
@@ -1153,7 +1165,7 @@ a, button {
     margin-left: auto;
     margin-right: auto;
 }
-.button-wrapper::before {
+.item::before {
     content: '';
     position: absolute;
     display: none;
@@ -1164,7 +1176,7 @@ a, button {
     background-color: rgba(238, 238, 238, 0.7);
     z-index: 1;
 }
-.item:hover .button-wrapper::before, .item:focus .button-wrapper::before {
+.item:hover::before, .item:focus .button-wrapper::before {
     display: block;
 }
 .item:hover .button-wrapper, .item:hover .button-wrapper {
@@ -1200,6 +1212,7 @@ a, button {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 760px;
     background-color: #ebebeb;
     margin-top: -11px;
@@ -1217,6 +1230,7 @@ a, button {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    flex-wrap: wrap;
     margin-left: 9px;
     list-style: none;
     padding: 0;
@@ -1225,6 +1239,8 @@ a, button {
     margin-right: 31px;
 }
 .catalog-nav a {
+    font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+    color: #000;
     text-transform: uppercase;
 }
 .arrow-toggle a:hover {
@@ -1268,7 +1284,7 @@ a, button {
 .right::after {
     content: '';
     position: absolute;
-    bottom: 37px;
+    bottom: 26px;
     width: 80px;
     height: 7px;
     background-color: #ffc600;
@@ -1317,13 +1333,27 @@ a, button {
 .center a:active, .left a:active {
     opacity: .3;
 }
-.social-button img {
+.social-button a {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
     opacity: .3;
 }
-.social-button img:hover, .social-button img:focus {
+.social-button:nth-of-type(1) a {
+    background-image: url("../img/fb.svg")
+}
+.social-button:nth-of-type(2) a {
+    background-image: url("../img/instagram.svg")
+}
+.social-button:nth-of-type(3) a {
+    background-image: url("../img/twitter.svg")
+}
+.social-button:hover, .social-button:focus {
     opacity: .6;
 }
-.social-button img:active {
+.social-button:active {
     opacity: .1;
 }
 .left {
@@ -1379,7 +1409,7 @@ a, button {
     width: 27px;
     height: 34px;
     background-image: url('../img/logo-html.svg');
-    bottom: 25px;
+    bottom: 14px;
     right: 0;
 }
 .inner-footer .footer-menu {
