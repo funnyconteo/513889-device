@@ -44,7 +44,7 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-a {
+a, button {
     text-decoration: none;
     cursor: pointer;
 }
@@ -70,7 +70,6 @@ a {
     z-index: 1;
     letter-spacing: 3.6px;
     outline: none;
-    cursor: pointer;
 }
 .btn::before {
     content: '';
@@ -466,22 +465,21 @@ a {
     text-align: left;
 }
 .popular ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 15px -20px 163px;
-  list-style: none;
-  padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 163px;
+    list-style: none;
+    padding: 0;
 }
 .popular li {
-  width: 160px;
-  z-index: 1;
-  margin: 0 20px;
-}
-.popular li:nth-child(n + 7) {
-  margin-top: 40px;
+    width: 160px;
+    z-index: 1;
 }
 .img-container {
     display: -webkit-box;
@@ -631,7 +629,6 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 106px;
-    flex-wrap: wrap;
 }
 .logo {
     display: block;
@@ -1086,16 +1083,8 @@ a {
     height: 380px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 126px;
 }
-.item .image-wrapper {
-    position: relative;
-    width: 360px;
-    height: 380px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.item.new-label .image-wrapper::after {
+.new-label::after {
     content: 'NEW';
     font-family: 'Gilroy ExtraBold', Arial, sans-serif;
     font-size: 14px;
@@ -1157,7 +1146,6 @@ a {
 .button-wrapper button {
     margin-left: auto;
     margin-right: auto;
-    cursor: pointer;
 }
 .item::before {
     content: '';
@@ -1328,13 +1316,13 @@ a {
     height: 32px;
     opacity: .3;
 }
-.facebook {
+.social-button:nth-of-type(1) a {
     background-image: url("../img/fb.svg")
 }
-.instagram {
+.social-button:nth-of-type(2) a {
     background-image: url("../img/instagram.svg")
 }
-.twitter {
+.social-button:nth-of-type(3) a {
     background-image: url("../img/twitter.svg")
 }
 .social-button:hover, .social-button:focus {
@@ -1442,7 +1430,6 @@ a {
     top: 22px;
     right: 22px;
     z-index: 2;
-    cursor: pointer;
 }
 .modal input, .modal textarea {
     font-family: 'Open Sans', Arial, sans-serif;
