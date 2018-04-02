@@ -58,7 +58,10 @@ a, button {
     padding-top: 8px;
     padding-bottom: 8px;
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 220px;
     border: none;
     background-color: transparent;
@@ -75,18 +78,16 @@ a, button {
     width: 220px;
     background-color: #f0c52e;
     position: absolute;
-    top: 16px;
-    right: 0;
     z-index: -1;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 .btn:hover::before, .btn:focus::before {
-    -webkit-transform: scale(7);
-    -ms-transform: scale(7);
-    -o-transform: scale(7);
-    transform: scale(7);
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    -o-transform: scale(10);
+    transform: scale(10);
 }
 .btn:active {
     color: rgba(0, 0, 0, 0.3);
@@ -822,7 +823,7 @@ a, button {
     align-items: center;
     width: calc(((100% - 1160px) /2 ) + 831px);
     background-color: #ebebeb;
-    padding-left: 48px;
+    padding-left: 71px;
 }
 .sort-wrapper {
     display: -webkit-box;
@@ -838,7 +839,7 @@ a, button {
     -webkit-justify-content: space-between;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 782px;
+    width: 760px;
 }
 .items-list {
     display: -webkit-box;
@@ -861,14 +862,16 @@ a, button {
     -webkit-align-items: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 650px;
+    width: 475px;
     margin: 0;
-    margin-left: 22px;
+    margin-left: 27px;
     list-style: none;
     padding: 0;
 }
 .sort li {
     margin-right: 30px;
+    white-space: nowrap;
+    line-height: normal;
 }
 .sort .current-sort {
     font-family: 'Open Sans', Arial, sans-serif;
@@ -945,9 +948,13 @@ a, button {
     padding: 0;
 }
 .sort-header .header-subtitle {
-    height: 70px;
+    letter-spacing: 3.4px;
     line-height: 70px;
-
+    margin: 0;
+}
+.sort-left .header-subtitle {
+    width: 200px;
+    padding-right: 70px;
 }
 .filter-form form {
     margin-top: 81px;
@@ -957,7 +964,6 @@ a, button {
     font-size: 18px;
     line-height: 24px;
     position: relative;
-
 }
 .filter-form legend:before {
     content: '';
